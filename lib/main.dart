@@ -1,22 +1,28 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main(){
-
-  runApp(Myapp());
+void main() {
+  runApp(MyApp());
 }
- class Myapp extends StatelessWidget{
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    home:const Scaffold(
-    backgroundColor: Colors.cyan,
-    body: Center(child:  Text('hello i am sourov /n i am cse student'),),)
-
+      title: 'Todo app',
+      home: HomeScreen(),
     );
+  }
+}
 
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.lightGreen,
+      body: Center(
+        child: Text('Hello world'),
+      ),
+    );
   }
 
-
-
- }
+}
